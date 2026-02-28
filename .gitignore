@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+
+# Data files
+data/dumps/*.hprof
+data/reports/*.zip
+data/reports/extracted-*
+data/reports/oql-*
+
+# Keep metadata files but ignore large dumps and reports
+!data/dumps/metadata.json
+!data/reports/reports-metadata.json
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local

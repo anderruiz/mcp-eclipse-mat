@@ -1,0 +1,37 @@
+[
+  {
+    "id": "report-1772303987262-4dis5f",
+    "heapDumpId": "unknown",
+    "reportType": "suspects",
+    "timestamp": "2026-02-28T18:56:47.840Z",
+    "reportPath": "/Users/ander.ruiz/mcp-eclipse-mat/data/reports/report-1772303987262-4dis5f-suspects.zip"
+  },
+  {
+    "id": "report-1772305007911-yzidtw",
+    "heapDumpId": "unknown",
+    "reportType": "overview",
+    "timestamp": "2026-02-28T18:57:19.280Z",
+    "reportPath": "/Users/ander.ruiz/mcp-eclipse-mat/data/reports/report-1772305007911-yzidtw-overview.zip"
+  },
+  {
+    "id": "report-1772314971316-8w2iqj",
+    "heapDumpId": "unknown",
+    "reportType": "suspects",
+    "timestamp": "2026-02-28T21:42:58.118Z",
+    "reportPath": "/Users/ander.ruiz/mcp-eclipse-mat/data/reports/report-1772314971316-8w2iqj-suspects.zip"
+  },
+  {
+    "id": "report-1772315000576-p6j1fn",
+    "heapDumpId": "unknown",
+    "reportType": "overview",
+    "timestamp": "2026-02-28T21:43:23.074Z",
+    "reportPath": "/Users/ander.ruiz/mcp-eclipse-mat/data/reports/report-1772315000576-p6j1fn-overview.zip"
+  },
+  {
+    "id": "report-1772315038560-96xman",
+    "heapDumpId": "unknown",
+    "reportType": "top_components",
+    "timestamp": "2026-02-28T21:44:07.221Z",
+    "reportPath": "/Users/ander.ruiz/mcp-eclipse-mat/data/reports/report-1772315038560-96xman-top_components.zip"
+  }
+]

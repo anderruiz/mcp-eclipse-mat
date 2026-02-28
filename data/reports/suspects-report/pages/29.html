@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-type" content="text/html;charset=UTF-8"><title>Thread Stack</title><link rel="stylesheet" type="text/css" href="../styles.css"><link rel="contents" href="../toc.html"><link rel="start" href="../index.html"><script src="../code.js" type="text/javascript"></script></head><body onload="preparepage();"><div><input type="hidden" id="imageBase" value="../img/" title="hide / unhide"></div><div id="header"><a class="sr-only" href="#content">Skip to main content</a><ul><li><a href="../index.html#i1">Leak Suspects</a></li><li>&raquo; <a href="../index.html#i8">Leaks</a></li><li>&raquo; <a href="../index.html#i17">Problem Suspect 1</a></li><li>&raquo; <a href="../pages/22.html#i24">Thread root on shortest path</a></li><li>&raquo; <a href="#content">Thread Stack</a></li></ul></div>
+<div id="content"><h5 id="i29"><a href="#" onclick="hide(this, 'exp29'); return false;" title="hide / unhide"><img src="../img/opened.gif" alt=""></a> Thread Stack <a href="mat://query/thread_details+0xee78e8dccdb0" title="Open in Memory Analyzer: thread_details+0xee78e8dccdb0"><img src="../img/open.gif" alt=""></a></h5><div id="exp29"><pre>ParallelProcessor-3-thread-21
+  at java.util.concurrent.ConcurrentHashMap.compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object; (ConcurrentHashMap.java:1947)
+  at com.github.benmanes.caffeine.cache.BoundedLocalCache.doComputeIfAbsent(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/Function;[JZ)Ljava/lang/Object; (BoundedLocalCache.java:2686)
+  at com.github.benmanes.caffeine.cache.BoundedLocalCache.computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;ZZ)Ljava/lang/Object; (BoundedLocalCache.java:2669)
+  at com.github.benmanes.caffeine.cache.LocalCache.computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object; (LocalCache.java:112)
+  at com.github.benmanes.caffeine.cache.LocalLoadingCache.get(Ljava/lang/Object;)Ljava/lang/Object; (LocalLoadingCache.java:58)
+  at com.dd.logs.appsec.security_issue_detector.dependencies.resolvers.DependentNodeStorage.getNode(Ljava/lang/String;)Lcom/dd/logs/appsec/security_issue_detector/dependencies/resolvers/DependentVersionNode; (DependentNodeStorage.java:166)
+  at com.dd.logs.appsec.security_issue_detector.dependencies.resolvers.DependentResolver.DFSTraversal(Lcom/dd/logs/appsec/security_issue_detector/dependencies/resolvers/DependentVersionNode;Ljava/util/SequencedMap;)Ljava/util/EnumSet; (DependentResolver.java:294)
+  at com.dd.logs.appsec.security_issue_detector.dependencies.resolvers.DependentResolver.DFSTraversal(Lcom/dd/logs/appsec/security_issue_detector/dependencies/resolvers/DependentVersionNode;Ljava/util/SequencedMap;)Ljava/util/EnumSet; (DependentResolver.java:298)
+  at com.dd.logs.appsec.security_issue_detector.dependencies.resolvers.DependentResolver.DFSTraversal(Lcom/dd/logs/appsec/security_issue_detector/dependencies/resolvers/DependentVersionNode;Ljava/util/SequencedMap;)Ljava/util/EnumSet; (DependentResolver.java:298)
+  at com.dd.logs.appsec.security_issue_detector.dependencies.resolvers.DependentResolver.lambda$traverseTree$1(ILjava/lang/String;Ljava/lang/Integer;)V (DependentResolver.java:227)
+  at com.dd.logs.appsec.security_issue_detector.dependencies.resolvers.DependentResolver$$Lambda+0x000038000293b000.accept(Ljava/lang/Object;Ljava/lang/Object;)V (Unknown Source)
+  at com.dd.appsec.vulnerability.utils.ParallelProcessor.lambda$process$0(Ljava/util/function/BiConsumer;Ljava/lang/Object;Ljava/lang/Integer;Ljava/util/concurrent/atomic/AtomicBoolean;)V (ParallelProcessor.java:65)
+  at com.dd.appsec.vulnerability.utils.ParallelProcessor$$Lambda+0x0000380002845400.run()V (Unknown Source)
+  at java.util.concurrent.Executors$RunnableAdapter.call()Ljava/lang/Object; (Executors.java:545)
+  at java.util.concurrent.FutureTask.run()V (FutureTask.java:328)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V (ThreadPoolExecutor.java:1090)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run()V (ThreadPoolExecutor.java:614)
+  at java.lang.Thread.runWith(Ljava/lang/Object;Ljava/lang/Runnable;)V (Thread.java:1487)
+  at java.lang.Thread.run()V (Thread.java:1474)
+</pre></div><br></div><div id="footer" class="toc"><a href="../toc.html">Table Of Contents</a><div class="mat">Created by <a href="http://www.eclipse.org/mat/" target="_blank">Eclipse Memory Analyzer</a></div></div>
+</body></html>
